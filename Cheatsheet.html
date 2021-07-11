@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<!--This HTML Document was written by Florian Keintzel-->
+
+<html>
+
+  <head>
+    <title>Cheatsheet 02</title>
+    <style>
+      dt{
+      font-weight:bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML</h1>
+    <dl>
+      <dt>1. Name the components of html elements properly</dt>
+      <dd>Starting Tag,Content and Ending Tag; examples for starting tags:h1,p,br,</dd>
+      <dt>2. Identify void elements and how they are denoted</dt>
+      <dd>Void elements don't have content inside of them and the also don't have an ending-tag. An example is the &lt;br&gt; tag (but can technically be closed this way: "&lt;br /&gt;")</dd>
+      <dt>3. Identify attributes</dt>
+      <dd>href,src,width,height,alt,style,lang,title,id,disabled</dd>
+      <dt>4. Write down the correct DOCTYPE declaration for html 5</dt>
+      <dd>&lt!DOCTYPE html&gt</dd>
+      <dt>5. Write down syntactically correct statements for the following elements</dt>
+      <dd>
+          <ol>
+
+              <li>Article: &lt;article&gt;&lt;h1&gt;First blogpost&lt;/h1&gt;&lt;/Article&gt;</li>
+
+              <li>Body: &lt;body&gt;&lt;p&gt;This is text&lt;/p&gt;&lt;/body&gt;</li>
+            
+              <li>line breaks: &lt;br&gt;</li>
+            
+              <li>Headings:<pre>
+                  &lt;h1&gt;Heading 1&lt;/h1&gt;
+                  &lt;h2&gt;Heading 2&lt;/h2&gt;
+                  &lt;h3&gt;Heading 3&lt;/h3&gt;
+                  &lt;h4&gt;Heading 4&lt;/h4&gt;
+                  &lt;h5&gt;Heading 5&lt;/h5&gt;
+                  &lt;h6&gt;Heading 6&lt;/h6&gt; 
+              </pre></li>
+            
+              <li>Section with meta-information: <pre>
+                &lt;section&gt;
+                  &lt;meta charset="UTF-8"&gt;
+                &lt;/section&gt;
+              </pre></li>
+            
+              <li>Top level element</li>
+            
+              <li>Image named</li>
+            
+              <li>Paragraph</li>
+            
+              <li>Section: &lt;section&gt;&lt;/section&gt;</li>
+            
+              <li>Label appearing in the title bar: &lt;title&gt;Pagetitle&lt;/title&gt;</li>
+            
+              <li>Link to other pages: &lt;a href="http://duckduckgo.com"&gt; "Zur Suchmaschine"&lt;/a&gt;</li>
+            
+              <li>Comment: &lt;!-- This is a comment --&gt;;</li>
+            
+              <li>Head with title and meta elements <pre>
+                &lt;head&gt;
+                  &lt;title&gt;Pagetitle&lt;/title&gt;
+                  &lt;meta name="Author" content="Florian Keintzel"&gt;
+                &lt;/head&gt;
+              </pre></li>
+            
+            </ol>
+      </dd>
+    </dl>
+
+    <h1>CSS</h1>
+    <dl>
+      <dt>1. Name the components of a css rule properly:</dt>
+      <dd>
+        Selector and declaration block with properties in it (decklaration in {},and every property ends with ';')
+      </dd>
+      <dt>2. Use combinators properly: direct child, descendant, adjacent sibling, sibling </dt>
+      <dd>
+        <pre>
+          descendant:
+          div h1{
+            text-align: center;
+          }
+
+          child:
+          div > h1 {
+            text-align: right;
+          }
+
+          adjacent sibling Selector
+          div + h1 {
+            text-align: left;
+          }
+
+          general sibling Selector
+          div ~ h1 {
+            background-color: green;
+          }
+        </pre>
+      </dd>
+      <dt>3. Specify colors by color names and in hexadecimal notation</dt>
+      <ol>
+          <li>Red: #FF0000</li>
+        
+          <li>Green: #00FF00</li>
+        
+          <li>Blue: #0000FF</li>
+        
+          <li>White: #FFFFFF</li>
+        
+          <li>Black: #000000</li>
+        </ol>
+      <dt>4. Declarations for color, background color</dt>
+      <dd>style="color:MediumSeaGreen;"  || style="background-color:blue;"</dd>
+      <dt>5. Pseudo classes for the &lt;a&gt; element</dt>
+      <dd>a:link,a:visited,a:hover,a:active</dd>
+      <dt>6. Declaration for background image</dt>
+      <dd>background-image: [color] (valid color name e.g. "red", hex value e.g. ff0000, rgb value e.g. rgb(255,0,0)</dd>
+      <dt>7. Declaration for text alignment (left, right, center, justify)</dt>
+      <dd>text-align: [left,right etc]</dd>
+      <dt>8. Declaration for text decoration (overline, underline, line-through)</dt>
+      <dd>text-decoration: [overline,underline etc (can also be: none)]</dd>
+      <dt>9. Declaration for text transformation (uppercase, lowercase, capitalize)</dt>
+      <dd>text-transform: [uppercase, lowercase etc]</dd>
+      <dt>10. Identify the difference between serif and sans-serif fonts</dt>
+      <dd>Sans means without, therefore sans serif doesn't have those small lines at the end of some characters that serif has</dd>
+      <dt>11. Declarations for font families</dt>
+      <dd>font-family: "this is font 1",font2,font3;   (if the first one is not available the second comes and so on..)</dd>
+      <dt>12. Declarations for font style normal and italic</dt>
+      <dd>font-style: normal; || font-style: italic</dd>
+      <dt>13. Declarations for font sizes</dt>
+      <dd>font-size: [number]px  (e.g. font-size: 40px)</dd>
+      <dt>14. Declarations for font weights</dt>
+      <dd>font-weight: [normal,lighter,bold]</dd>
+    </ol>
+    
+  </body>
+</html>
+
